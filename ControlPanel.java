@@ -143,12 +143,8 @@ public class ControlPanel {
             int text_length = text_c.length;
 
             //loop the text and replace the symbols
-            for (int i = 0; i < text_length; i++) {
-                text_c[i] = arrayOfKeys[rand.nextInt(30)];
-                arrayOfKeys[i] = text_c[i];
-            }
-
-
+            for (int i = 0; i < text_length; i++) text_c[i] = arrayOfKeys[rand.nextInt(30)];
+   
             return text_c.toString();
 
         }
